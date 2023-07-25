@@ -1,0 +1,28 @@
+.input {
+  border: 1px solid $white;
+  padding: 10px 15px;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: $font-family-montserrat, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+
+  &::placeholder {
+    color: $black;
+    opacity: 0.3;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 5px 4px inset $black;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px 4px inset $black;
+  }
+
+  &--error {
+    border-color: red;
+    box-shadow: 0 0 5px 4px inset red;
+  }
+}

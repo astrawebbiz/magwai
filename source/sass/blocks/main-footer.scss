@@ -1,11 +1,9 @@
 .main-footer {
-  padding: 14px 24px 21px;
-  background-color: $corporate-blue;
+  padding: 14px 15px 21px;
   color: $white;
   font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
-  letter-spacing: 0.3px;
+  text-align: right;
+  margin-top: 50px;
 
   @media (min-width: $tablet-width) {
     padding: 15px 44px 20px;
@@ -24,6 +22,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
+}
+
+.main-footer__link {
+  color: $white;
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 

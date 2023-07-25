@@ -1,13 +1,8 @@
 .main-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: $corporate-orange-2;
-  max-width: 100%;
-  width: 326px;
+  background-color: $body-background;
 
-  @media (max-width: ($tablet-width - 1px)) {
-    &--closed .main-nav__wrapper {
+  @media (max-width: ($desktop-width - 1px)) {
+    &--closed .main-nav__list {
       display: none;
     }
 
@@ -15,31 +10,91 @@
       background: url("../../img/stack.svg#menu-icon");
     }
 
-    &--opened .main-nav__wrapper {
+    &--opened .main-nav__list {
       display: block;
+      position: absolute;
+      top: 116px;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh - 116px);
+      z-index: 2;
+      padding: 45px 50px 10px;
+      background-color: $body-background;
     }
 
     &--opened .main-nav__toggle {
       background: url("../../img/stack.svg#close-icon");
+      width: 24px;
+      height: 20px;
+      top: 50px;
     }
   }
 
+  @media (max-width: ($tablet-width - 1px)) {
+    &--closed .main-nav__wrapper {
+      display: none;
+    }
+
+    &--opened .main-nav__wrapper {
+      display: block;
+    }
+
+    &--opened .main-nav__list {
+      display: block;
+      position: static;
+      top: 116px;
+      left: 0;
+      width: auto;
+      height: auto;
+      z-index: 2;
+      padding: 0;
+    }
+
+    &--opened .main-nav__toggle {
+      top: 26px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 231px);
+  }
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  padding: 62px 18px 10px;
+  background-color: $body-background;
+
   @media (min-width: $tablet-width) {
     position: initial;
-    background-color: #000000;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .main-nav__toggle {
   background: url("../../img/stack.svg#menu-icon");
-  width: 45px;
+  width: 37px;
   height: 31px;
   border: 0;
   position: absolute;
-  top: 18px;
-  right: 16px;
+  top: 20px;
+  left: 15px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 3;
 
   &:hover {
     opacity: 0.6;
@@ -50,6 +105,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: 44px;
+    left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -57,24 +117,14 @@
 .main-nav__list {
   @include list-reset;
   position: relative;
+  margin-bottom: 45px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 7px;
-    bottom: 0;
-    left: 0;
-    display: block;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    z-index: 1;
-  }
-
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 0;
 
     &::after {
       display: none;
@@ -83,52 +133,45 @@
 }
 
 .main-nav__item {
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
-
-  @media (min-width: $tablet-width) {
-    border: 0;
-    width: 20%;
-
-    &:nth-child(4n+3) {
-      margin: 0 0 0 20%;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: 43px;
   }
 }
 
 .main-nav__item a {
-  color: #000000;
+  color: $body-background;
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 700;
-  padding: 17px 0 12px 0;
+  padding: 8px 0 7px;
   display: block;
+  text-shadow: -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white, 1px 1px 0 $white;
 
   &:hover {
-    background-color: #679ec1;
+    opacity: 0.5;
   }
 
   &:focus,
   &:active {
-    background-color: #5496bd;
-    color: rgba(#000000, 0.3);
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    color: $dark-color;
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-shadow: none;
+    color: $white;
     font-size: 14px;
-    background-color: transparent;
+    line-height: 21px;
+    transition: 0.5s;
 
     &:hover {
-      color: #000000;
-      background-color: transparent;
-    }
-
-    &:focus,
-    &:active {
-      color: #000000;
-      background-color: transparent;
+      opacity: 1;
+      color: $gold;
     }
   }
 }

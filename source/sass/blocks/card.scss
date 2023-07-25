@@ -1,0 +1,88 @@
+.card {
+  background-color: $white;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.card__image {
+  width: 100%;
+  display: block;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.card__wrapper {
+  padding: 18px 24px 30px;
+}
+
+.card__theme {
+  font-family: $font-family-mulish, "Arial", sans-serif;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 26px;
+  }
+}
+
+.card__title {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+  }
+}
+
+.card__description {
+  line-height: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+    min-height: 144px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+    min-height: 168px;
+  }
+}
+
+.card__information {
+  font-size: 12px;
+  margin-bottom: 27px;
+}
+
+.card__user {
+  font-weight: 700;
+}
+
+.card__continue {
+  border: 0;
+  line-height: 18px;
+  font-family: $font-family-mulish, "Arial", sans-serif;
+  background-color: $black;
+  display: block;
+  padding: 16px 15px;
+  color: $white;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    color: $black;
+    background-color: $gold;
+  }
+}

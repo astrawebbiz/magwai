@@ -1,35 +1,21 @@
 .main-header {
-  position: relative;
-  background: #06255b url("../../img/back-mobile.webp") no-repeat 50% 100%;
-  padding: 11px 16px;
-  background-size: cover;
-  overflow-x: hidden;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.webp");
-  }
-
-  &::after {
-    @include bottom-triangle("../../img/stack.svg#intro-triangle", 1200px 57px, 57px);
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 518px;
-    padding: 77px 0 85px 0;
-    background-image: url("../../img/back-desktop.webp");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.webp");
-    }
-  }
+  background-color: $body-background;
+  padding: 13px 16px 35px;
+  min-height: 96px;
 
   &--nojs {
     height: auto;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 56px;
+    min-height: 141px;
     height: auto;
+    padding: 30px 16px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 28px 101px 35px;
   }
 }
 
@@ -41,6 +27,13 @@
   position: static;
 }
 
+.main-header--nojs .main-nav__wrapper, .main-header--nojs .main-nav--closed .main-nav__wrapper {
+  position: static;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
 @media (max-width: ($tablet-width - 1px)) {
   .main-header--nojs .main-nav--closed .main-nav__list {
     display: block;
@@ -48,13 +41,27 @@
 }
 
 .main-header__logo {
-  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 30px;
+    left: 23%;
+    width: 156px;
+    height: 60px;
     z-index: 1;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    position: static;
+    margin-right: 75px;
   }
 }

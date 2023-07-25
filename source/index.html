@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--nojs">
     <nav class="main-header__nav main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -29,8 +29,13 @@
           <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
         </ul>
         <div class="main-nav__contactus contactus">
-          <a class="contactus__link" href="#">Позвонить</a>
-          <button class="contactus__button button">Оставить заявку</button>
+          <a class="contactus__link" href="#">
+            <svg class="contactus__phone" width="32" height="32" aria-label="Позвонить">
+              <use xlink:href="img/stack.svg#phone-icon"></use>
+            </svg>
+          </a>
+          <button class="contactus__button button button--big showModal"><span class="button__text">Оставить заявку</span>
+          </button>
         </div>
       </div>
     </nav>
@@ -44,14 +49,15 @@
       <div class="intro__description">
         В прошлый четверг все офигели от полета DOGIE COIN на марс.
       </div>
-      <button class="intro__button button">Оставить заявку</button>
+      <button class="intro__button button showModal"><span class="button__text">Оставить заявку</span></button>
     </section>
     <section class="cards">
       <h2 class="cards__title">Карточки</h2>
       <div class="cards__list">
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p1-desktop.webp, img/p1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p1-desktop.webp, img/p1-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p1-tablet.webp, img/p1-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p1-mobile.webp, img/p1-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p1-desktop.jpg, img/p1-desktop@2x.jpg 2x">
@@ -59,24 +65,28 @@
             <img src="img/p1-mobile.jpg" srcset="img/p1-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            bridge
+          <div class="card__wrapper">
+            <div class="card__theme">
+              bridge
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p2-desktop.webp, img/p2-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p2-desktop.webp, img/p2-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p2-tablet.webp, img/p2-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p2-mobile.webp, img/p2-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p2-desktop.jpg, img/p2-desktop@2x.jpg 2x">
@@ -84,24 +94,28 @@
             <img src="img/p2-mobile.jpg" srcset="img/p2-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            water
+          <div class="card__wrapper">
+            <div class="card__theme">
+              water
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p3-desktop.webp, img/p3-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p3-desktop.webp, img/p3-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p3-tablet.webp, img/p3-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p3-mobile.webp, img/p3-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p3-desktop.jpg, img/p3-desktop@2x.jpg 2x">
@@ -109,24 +123,28 @@
             <img src="img/p3-mobile.jpg" srcset="img/p3-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            bridge
+          <div class="card__wrapper">
+            <div class="card__theme">
+              bridge
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p4-desktop.webp, img/p4-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p4-desktop.webp, img/p4-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p4-tablet.webp, img/p4-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p4-mobile.webp, img/p4-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p4-desktop.jpg, img/p4-desktop@2x.jpg 2x">
@@ -134,24 +152,28 @@
             <img src="img/p4-mobile.jpg" srcset="img/p4-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            bridge
+          <div class="card__wrapper">
+            <div class="card__theme">
+              bridge
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p5-desktop.webp, img/p5-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p5-desktop.webp, img/p5-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p5-tablet.webp, img/p5-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p5-mobile.webp, img/p5-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p5-desktop.jpg, img/p5-desktop@2x.jpg 2x">
@@ -159,24 +181,28 @@
             <img src="img/p5-mobile.jpg" srcset="img/p5-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            bridge
+          <div class="card__wrapper">
+            <div class="card__theme">
+              bridge
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p6-desktop.webp, img/p6-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p6-desktop.webp, img/p6-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p6-tablet.webp, img/p6-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p6-mobile.webp, img/p6-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p6-desktop.jpg, img/p6-desktop@2x.jpg 2x">
@@ -184,24 +210,28 @@
             <img src="img/p6-mobile.jpg" srcset="img/p6-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            forest
+          <div class="card__wrapper">
+            <div class="card__theme">
+              forest
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p7-desktop.webp, img/p7-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p7-desktop.webp, img/p7-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p7-tablet.webp, img/p7-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p7-mobile.webp, img/p7-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p7-desktop.jpg, img/p7-desktop@2x.jpg 2x">
@@ -209,24 +239,26 @@
             <img src="img/p7-mobile.jpg" srcset="img/p7-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-
+          <div class="card__wrapper">
+            <div class="card__theme"></div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p8-desktop.webp, img/p8-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p8-desktop.webp, img/p8-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p8-tablet.webp, img/p8-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p8-mobile.webp, img/p8-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p8-desktop.jpg, img/p8-desktop@2x.jpg 2x">
@@ -234,24 +266,28 @@
             <img src="img/p8-mobile.jpg" srcset="img/p8-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            nature
+          <div class="card__wrapper">
+            <div class="card__theme">
+              nature
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p9-desktop.webp, img/p9-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p9-desktop.webp, img/p9-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/p9-tablet.webp, img/p9-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p9-mobile.webp, img/p9-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p9-desktop.jpg, img/p9-desktop@2x.jpg 2x">
@@ -259,49 +295,76 @@
             <img src="img/p9-mobile.jpg" srcset="img/p9-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            nature
+          <div class="card__wrapper">
+            <div class="card__theme">
+              nature
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
         <article class="cards__item card">
           <picture class="card__image">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/p10-desktop.webp, img/p10-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/p10-tablet.webp, img/p10-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/p10-desktop.webp, img/p10-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/p10-tablet.webp, img/p10-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/p10-mobile.webp, img/p10-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/p10-desktop.jpg, img/p10-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/p10-tablet.jpg, img/p10-tablet@2x.jpg 2x">
             <img src="img/p10-mobile.jpg" srcset="img/p10-mobile@2x.jpg 2x" width="329" height="185"
                  alt="How to increase your productivity with a Music">
           </picture>
-          <div class="card__theme">
-            nature
+          <div class="card__wrapper">
+            <div class="card__theme">
+              nature
+            </div>
+            <div class="card__title">
+              How to increase your productivity with a Music
+            </div>
+            <div class="card__description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem
+              sed ut
+              perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+            </div>
+            <div class="card__information">
+              Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
+            </div>
+            <button class="card__continue">Continue reading</button>
           </div>
-          <div class="card__title">
-            How to increase your productivity with a Music
-          </div>
-          <div class="card__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
-          </div>
-          <div class="card__information">
-            Posted by <span class="card__user">Eugenia</span>, on <span class="card__date">July  24, 2019</span>
-          </div>
-          <button class="card__continue">Continue reading</button>
         </article>
       </div>
-      <button class="cards__more-button button">Загрузить ещё</button>
+      <button class="cards__more-button button button--big"><span class="button__text">Загрузить ещё</span></button>
     </section>
+    <section class="modal">
+      <button class="modal__close" type="button" aria-label="Закрыть окно отправки формы">Закрыть окно</button>
+      <h3 class="modal__title">Оставьте заявку</h3>
+      <form class="modal__form form" action="#" method="POST">
+        <label class="form__field form-field">
+          <span class="form-field__label">Имя*:</span>
+          <input class="form-field__control form-control form-control--required input" type="text"
+                 name="add-review-name" id="add-name" placeholder="Пётр">
+        </label>
+        <label class="form__field form-field">
+          <span class="form-field__label">Телефон*:</span>
+          <input class="form-field__control form-control form-control--required input input--phone" type="tel"
+                 name="add-phone" id="add-phone" placeholder="Введите телефон">
+        </label>
+        <button class="form__button button" type="submit">Отправить</button>
+      </form>
+      <div class="modal__success">Заявка отправлена</div>
+    </section>
+    <div class="modal-fade"></div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">

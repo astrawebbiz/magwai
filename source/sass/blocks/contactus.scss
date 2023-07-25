@@ -1,0 +1,67 @@
+.contactus {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-right: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 18px;
+    align-items: center;
+  }
+}
+
+.contactus__link {
+  display: block;
+  border: 1px solid $gold;
+  transform: skew(-17deg);
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto 7px;
+  max-width: 310px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 7px 0 0;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 31px 0 0;
+  }
+}
+
+.contactus__phone {
+  transform: skew(17deg);
+  opacity: 0.5;
+}
+
+.contactus__button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  max-width: 310px;
+
+  &::after {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 28px 20px;
+
+    &::after {
+      display: block;
+      width: 28px;
+      height: 59px;
+      right: -22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 69px 20px;
+    min-width: 265px;
+  }
+}

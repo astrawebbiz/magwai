@@ -1,0 +1,17 @@
+.form-field {
+  display: flex;
+  align-items: center;
+}
+
+.form-field__label {
+  width: 30%;
+  text-align: left;
+}
+
+.form-field__control {
+  width: 70%;
+}
+
+.form__button {
+  margin-top: 15px;
+}
