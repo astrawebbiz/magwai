@@ -96,9 +96,9 @@ let getOneCard = (title, description, userId) => {
               <div class="card__theme">
                 ${themes[random]}
               </div>
-              <div class="card__title">
+              <h2 class="card__title">
                 ${title}
-              </div>
+              </h2>
               <div class="card__description">
                 ${description}
               </div>
