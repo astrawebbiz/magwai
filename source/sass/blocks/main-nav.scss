@@ -7,7 +7,7 @@
     }
 
     &--closed .main-nav__toggle {
-      background: url("../../img/stack.svg#menu-icon");
+      background: url("../img/stack.svg#menu-icon");
     }
 
     &--opened .main-nav__list {
@@ -23,7 +23,7 @@
     }
 
     &--opened .main-nav__toggle {
-      background: url("../../img/stack.svg#close-icon");
+      background: url("../img/stack.svg#close-icon");
       width: 24px;
       height: 20px;
       top: 50px;
@@ -86,7 +86,7 @@
 }
 
 .main-nav__toggle {
-  background: url("../../img/stack.svg#menu-icon");
+  background: url("../img/stack.svg#menu-icon");
   width: 37px;
   height: 31px;
   border: 0;

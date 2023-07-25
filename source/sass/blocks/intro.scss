@@ -27,11 +27,11 @@
   @media (min-width: $desktop-width) {
     height: 960px;
     padding: 600px 100px 85px 100px;
-    background-image: url("../../img/backgroung-desktop.webp");
+    background-image: url("../img/backgroung-desktop.webp");
     top: -24px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgroung-desktop@2x.webp");
+      background-image: url("../img/backgroung-desktop@2x.webp");
     }
   }
 }
