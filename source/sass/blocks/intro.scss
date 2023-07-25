@@ -1,0 +1,89 @@
+.intro {
+  color: $white;
+  padding-top: 88px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.intro__title {
+  @include indent-reset;
+  margin-bottom: 23px;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1.47px;
+}
+
+.intro__title strong {
+  font-weight: 900;
+}
+
+.intro__description {
+  font-size: 18px;
+  max-width: 246px;
+  line-height: 110%;
+  margin-bottom: 41px;
+}
+
+.intro__description p {
+  @include indent-reset;
+  margin-bottom: 30px;
+}
+
+.intro__parts {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 85%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 319px;
+  margin-bottom: 39px;
+}
+
+.intro__buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 343px;
+}
+
+.intro__button {
+  display: inline-block;
+}
+
+.intro__square {
+  border: 1px solid $white;
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  position: absolute;
+  top: 240px;
+  right: -160px;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.intro__square::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid $corporate-orange;
+  top: -40px;
+  right: 40px;
+  opacity: 0.8;
+}
+
+.intro__square::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: $corporate-orange;
+  top: -20px;
+  right: 20px;
+  opacity: 0.8;
+}
+

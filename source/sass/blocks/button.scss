@@ -1,0 +1,36 @@
+.button {
+  border: 2px solid;
+  background-color: #da5d24;
+  color: $white;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 16px 22px 14px;
+  cursor: pointer;
+  letter-spacing: 0.25px;
+  min-width: 133px;
+  text-align: center;
+
+  &:hover {
+    background-color: $corporate-orange-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba($corporate-orange-hover, 0.3);
+  }
+
+  &:disabled {
+    background-color: rgba($corporate-orange-hover, 0.1);
+  }
+}
+
+.button--white {
+  background-color: $white;
+  color: #06255b;
+  border-color: $white;
+}
+
+.button--transparent {
+  background-color: rgba(6, 37, 91, 0.6);
+}

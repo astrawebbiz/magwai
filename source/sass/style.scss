@@ -1,0 +1,15 @@
+/*добавляем переменные и миксины*/
+@import "./variables.scss";
+@import "./mixins.scss";
+
+/*базовые стили*/
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+
+/*стили блоков*/
+@import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/main-footer.scss";
+

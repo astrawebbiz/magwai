@@ -1,0 +1,36 @@
+.main-footer {
+  padding: 14px 24px 21px;
+  background-color: $corporate-blue;
+  color: $white;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 44px 20px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 144px 33px;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.main-footer__privacy {
+  margin-bottom: 10px;
+}
+
+.main-footer__coryright {
+  margin-bottom: 10px;
+}

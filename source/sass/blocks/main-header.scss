@@ -1,0 +1,60 @@
+.main-header {
+  position: relative;
+  background: #06255b url("../../img/back-mobile.webp") no-repeat 50% 100%;
+  padding: 11px 16px;
+  background-size: cover;
+  overflow-x: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.webp");
+  }
+
+  &::after {
+    @include bottom-triangle("../../img/stack.svg#intro-triangle", 1200px 57px, 57px);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    padding: 77px 0 85px 0;
+    background-image: url("../../img/back-desktop.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.webp");
+    }
+  }
+
+  &--nojs {
+    height: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    height: auto;
+  }
+}
+
+.main-header--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-header--nojs .main-nav {
+  position: static;
+}
+
+@media (max-width: ($tablet-width - 1px)) {
+  .main-header--nojs .main-nav--closed .main-nav__list {
+    display: block;
+  }
+}
+
+.main-header__logo {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
